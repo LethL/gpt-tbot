@@ -8,3 +8,7 @@ export const roles = {
   USER: 'user',
   SYSTEM: 'system',
 };
+
+export const INITIAL_SESSION = {
+  messages: [],
+};
