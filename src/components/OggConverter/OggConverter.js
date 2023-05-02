@@ -3,10 +3,10 @@ import ffmpeg from 'fluent-ffmpeg';
 import installer from '@ffmpeg-installer/ffmpeg';
 import { createWriteStream } from 'fs';
 import { dirname, resolve } from 'path';
-import { __dirname } from './constans/constans.js';
-import { removeFile } from './utils/utils.js';
+import { __dirname } from '../../constans/constans.js';
+import { removeFile } from '../../utils/utils.js';
 
-class oggConverter {
+class OggConverter {
   constructor() {
     ffmpeg.setFfmpegPath(installer.path);
   }
@@ -49,4 +49,4 @@ class oggConverter {
   }
 }
 
-export const ogg = new oggConverter();
+export const oggConverter = new OggConverter();
